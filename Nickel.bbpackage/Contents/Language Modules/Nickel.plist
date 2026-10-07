@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>BBLMLanguageDisplayName</key>
+	<string>Nickel</string>
+	<key>BBLMLanguageCode</key>
+	<string>Nckl</string>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMIsCaseSensitive</key>
+	<true/>
+	<key>BBLMScansFunctions</key>
+	<false/>
+	<key>BBLMSupportsTextCompletion</key>
+	<true/>
+	<key>BBLMCommentLineDefault</key>
+	<string>#</string>
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.ncl</string>
+		</dict>
+	</array>
+	<key>BBLMPreferredFilenameExtension</key>
+	<string>ncl</string>
+	<key>BBLMKeywordList</key>
+	<array>
+		<string>if</string>
+		<string>then</string>
+		<string>else</string>
+		<string>forall</string>
+		<string>in</string>
+		<string>let</string>
+		<string>rec</string>
+		<string>match</string>
+		<string>null</string>
+		<string>true</string>
+		<string>false</string>
+		<string>or</string>
+		<string>as</string>
+		<string>include</string>
+		<string>fun</string>
+		<string>import</string>
+		<string>default</string>
+		<string>doc</string>
+		<string>optional</string>
+		<string>priority</string>
+		<string>force</string>
+		<string>not_exported</string>
+	</array>
+	<key>BBLMPredefinedNameList</key>
+	<array>
+		<string>Dyn</string>
+		<string>Number</string>
+		<string>Bool</string>
+		<string>String</string>
+		<string>Array</string>
+		<string>std</string>
+	</array>
+	<key>BBLMLanguageServerInfo</key>
+	<dict>
+		<key>ServerCommand</key>
+		<string>nls</string>
+		<key>ServerLanguageID</key>
+		<string>nickel</string>
+	</dict>
+	<key>Language Features</key>
+	<dict>
+		<key>Identifier and Keyword Character Class</key>
+		<string>A-Za-z0-9_'-</string>
+		<key>Comment Pattern</key>
+		<string>\#[^\r\n]*</string>
+		<key>String Pattern</key>
+		<string>(?x: (?:m|[a-zA-Z][_a-zA-Z0-9\-']*-s)(?P&lt;nickel_delim&gt;%+)" (?s:.*?) "(?P=nickel_delim)(?!%) | "(?:\\[\s\S]|[^"\\])*" )</string>
+	</dict>
+</dict>
+</plist>
